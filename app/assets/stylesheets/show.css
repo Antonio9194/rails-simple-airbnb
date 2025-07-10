@@ -1,0 +1,66 @@
+.main-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info h2, .info h3 {
+  color: #ff5a5f;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.info p, .info > :not(h2):not(h3) {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.info strong {
+  color: #ff5a5f;
+  margin-right: 6px;
+}
+
+.info i.fa-solid {
+  color: #ff5a5f;
+  margin-right: 6px;
+}
+
+/* New style to put price and guests side by side */
+.info.price-guests {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.btn.edit-flat-btn {
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 6px 16px;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.edit-flat-btn:hover,
+.btn.edit-flat-btn:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: white;
+  outline: none;
+}

@@ -1,0 +1,26 @@
+<div class="navbar">
+  <h1>Earthbnb</h1>
+  <%= link_to "Edit Flat", edit_flat_path, class: "btn edit-flat-btn" %>
+</div>
+
+<div class="main-container">
+  <div class="info-container">
+    <div class="info">
+      <h2>Name</h2>
+      <%= @flat.name%>
+    </div>
+    <div class="info">
+      <h3>Description</h3>
+      <%= @flat.description%>
+    </div>
+    <div class="info">
+      <h3>Address</h3>
+      <%= @flat.address%>
+    </div>
+   <div class="info price-guests">
+  <p><strong><i class="fa-solid fa-euro-sign"></i></strong><%= @flat.price_per_night %></p>
+  <p><strong><i class="fa-solid fa-person"></i></strong><%= @flat.number_of_guests %></p>
+</div>
+<%= link_to "← Back to the flats", flats_path, class: "back-flat-btn" %>
+  </div>
+</div>
