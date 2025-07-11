@@ -7,6 +7,9 @@
   <div class="cards-container">
     <% @flats.each do |flat| %>
       <div class="flat">
+        <div class="img">
+            <%= image_tag flat.image_url, alt: flat.name, class: "flat-image" %>
+        </div>
         <h2><%= flat.name %></h2>
         <p><%= flat.description %></p>
         <p><strong>Address:</strong> <%= flat.address %></p>
